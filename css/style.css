@@ -1,0 +1,78 @@
+ul{
+    list-style-type: none;
+    /* remove bullet points */
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    /* make our list items horisontal */
+
+}
+
+li a, .dropbtn{
+    color:cornsilk;
+    /* chages text colors */
+    text-decoration: none;
+    /* remove underlines */
+    text-align: center;
+    /* centers our text inside list items */
+    padding: 15px 16px;
+    /* spaces out out text from tehhe edges of container */
+    display: inline-block;
+    /* adds vertical and horizontal paddings */
+    
+
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color:darkgoldenrod;
+    /* chages deep background color */
+    transition: 0.7s;
+    /* makes the colors change smooth */
+}
+
+li.dropdown{
+    display:inline-block;
+}
+
+.dropdown-menu{
+    display: none;
+    /* use to hide vertical menu */
+    /* opacity:0; */
+    /* used to hode horizontal menu */
+    min-width: 160px;
+    /* set a minimun for when shriking ot expanding the page */
+    background-color: gray;
+    /* chages the bgc on our dropdown ul items */
+    position: absolute;
+    box-shadow:0px 8px 16px 2px rgba(0,0,0,0.6);
+    /* make dropdown box itself pretty */
+    
+}
+
+.dropdown:hover .dropdown-menu{
+    /* opacity: 1; */
+    display: block;
+    /* use to make vertical menu reapear on hover */
+}
+
+.dropdown-menu a{
+    padding: 12px 16px;
+    display: block;
+    /* makes our drop menu items tke up the full line/space*/
+}
+
+body{
+    display: flex;
+    /* enable flexbox */
+    justify-content: center;
+    /* center our navegation menu using flexbox */
+}
+/* 
+nav{
+    width: 80%;
+    height: 60%;
+    border: 1px solid #000;
+    text-align: center;
+
+} */
